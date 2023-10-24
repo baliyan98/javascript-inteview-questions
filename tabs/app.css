@@ -1,0 +1,18 @@
+.pointer {
+  cursor: pointer;
+}
+.decoration-none {
+  text-decoration: none;
+}
+.list-style {
+  list-style: none;
+}
+[data-tab-content] {
+  display: none;
+}
+.active[data-tab-content] {
+  display: block;
+}
+.tab.active {
+  color: red;
+}

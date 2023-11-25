@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.notes-app {
+  display: flex;
+  height: 100vh;
+}
+.notes-sidebar {
+  height: 100%;
+  border-right: 0.15rem solid grey;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex: 1 1 20%;
+}
+
+.new-note-button {
+  background-color: #0881a3;
+  height: 6%;
+  color: #ffffff;
+  padding: 1%;
+  text-align: center;
+  width: 90%;
+  margin: 2.5%;
+  border: none;
+  border-radius: 0.25rem;
+  font-size: large;
+}
+
+.new-note-button:hover {
+  cursor: pointer;
+}
+.note {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 2.5%;
+  padding: 1.5%;
+  line-height: 1.75rem;
+}
+.note-list {
+  margin: 0.15rem;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+}
+.note-list-selected {
+  background-color: #e8e8e8;
+}
+.note-title {
+  font-weight: bold;
+  font-size: 1.15rem;
+}
+.note-footer {
+  text-align: end;
+  opacity: 0.5;
+  font-style: italic;
+}
+
+.notes-preview {
+  display: flex;
+  flex-direction: column;
+  gap: 5%;
+  flex: 2 2 75%;
+}
+.note-input {
+  border: none;
+  margin: 2%;
+  height: 12%;
+  padding: 0.5rem;
+  font-size: 2rem;
+}
+
+.note-input::placeholder {
+  font-size: 2rem;
+  opacity: 0.5;
+}
+.note-text {
+  border: none;
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}

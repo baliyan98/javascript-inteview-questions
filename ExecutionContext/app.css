@@ -1,0 +1,27 @@
+.modals {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-header {
+  background-color: #f44336;
+  height: 50px;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.modal-body {
+  background-color: #2973af;
+  margin-bottom: 30px;
+  width: 100%;
+  height: 300px;
+}

@@ -1,4 +1,4 @@
-console.log("Polyfill for Promise.Any");
+console.log("Polyfill for Promise.ANY");
 
 const asyncResolveTask = (time) => {
   return new Promise((resolve, reject) => {

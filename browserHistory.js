@@ -16,6 +16,13 @@ function BrowserHistory() {
     }
     return this.visitedUrls[this.activeUrl];
   };
+  this.goNext = function () {
+    this.activeUrl++;
+    if (this.activeUrl >= this.visitedUrls.length) {
+      return;
+    }
+    return this.visitedUrls[this.activeUrl];
+  };
 }
 const bh = new BrowserHistory();
 
@@ -29,6 +36,9 @@ bh.visit("C");
 console.log(bh.current());
 
 bh.goBack();
+console.log(bh.current());
+
+bh.goNext();
 console.log(bh.current());
 
 bh.visit("D");
